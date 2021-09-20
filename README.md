@@ -1,1 +1,1 @@
-# drive-sync
+# syncpy
