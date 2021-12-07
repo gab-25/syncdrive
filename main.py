@@ -11,12 +11,14 @@ def main():
     del args[0]
     args = " ".join([str(elem) for elem in args])
 
+    gdrive = GDrive(0)
+
     if "--help" in args:
         help()
     elif "--upload" in args:
-        GDrive.upload()
+        gdrive.upload()
     elif "--download" in args:
-        GDrive.download()
+        gdrive.download()
     else:
         print("Error: invalid arguments, use --help for documentation")
 
