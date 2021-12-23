@@ -1,6 +1,6 @@
 import sys
 from gdrive.gdrive import GDrive
-
+from gdrive.helpers import help
 
 print("GSYNCPY - GOOGLE SYNC TOOL")
 print("")
