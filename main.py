@@ -1,34 +1,27 @@
 import sys
-from enum import Enum
 from gdrive.gdrive import GDrive
-from gdrive.helpers import help
-
-print("GSYNCPY - GOOGLE SYNC TOOL")
-print("")
-
-
-class Command(Enum):
-    help = "--help"
-    upload = "--upload"
-    download = "--download"
+from gdrive.helpers import Helpers
 
 
 def main():
+    print("GSYNCPY - GOOGLE SYNC TOOL")
+    print()
+
     args = sys.argv
     del args[0]
     args = " ".join([str(elem) for elem in args])
 
-    gdrive = GDrive(0)
+    if args == "":
+        raise Exception("invalid arguments, use --help for documentation")
 
-    if Command.help.value in args:
-        help(Command)
-    elif Command.upload.value in args:
-        gdrive.upload()
-    elif Command.download.value in args:
-        gdrive.download()
+    if "--help" in args:
+        Helpers.help(args)
     else:
-        print("Error: invalid arguments, use --help for documentation")
+        GDrive(0, args)
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as ex:
+        print("Error: {msg}".format(msg=ex))
