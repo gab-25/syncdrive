@@ -24,4 +24,4 @@ if __name__ == "__main__":
     try:
         main()
     except Exception as ex:
-        print("Error: {msg}".format(msg=ex))
+        print("Error: {0}".format(ex))
