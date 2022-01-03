@@ -14,11 +14,12 @@ class Helpers:
 
     @staticmethod
     def commands():
+        class_excluded = ["helpers", "login"]
         cmd_labels = []
         path = os.path.dirname(os.path.abspath(__file__))
         for file in glob.glob(os.path.join(path, "*.py")):
             file_name = os.path.splitext(os.path.basename(file))[0]
-            if file_name == "helpers":
+            if class_excluded.__contains__(file_name):
                 continue
             module = getattr(gdrive, file_name)
             class_attr = getattr(module, dir(module)[0])
