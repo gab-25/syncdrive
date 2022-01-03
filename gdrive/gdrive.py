@@ -1,6 +1,3 @@
-from selenium import webdriver
-
-
 class GDrive:
     idDrive: int
 
@@ -14,8 +11,7 @@ class GDrive:
                 print("Param {0} not found, use --help for list params".format(arg))
 
     def __login():
-        driver = webdriver.Firefox()
-        driver.get("https://accounts.google.com/signin")
+        # TODO execute googler sigin
         pass
 
     def upload():
