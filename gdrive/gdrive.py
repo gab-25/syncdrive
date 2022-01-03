@@ -1,9 +1,12 @@
+from gdrive.login import Login
+
+
 class GDrive:
     idDrive: int
 
-    def __init__(self, idDrive, args):
+    def __init__(self, idDrive: int, args: list):
         self.idDrive = idDrive
-        # TODO execute google signin
+        Login()
         for arg in args:
             try:
                 getattr(GDrive, arg)()
