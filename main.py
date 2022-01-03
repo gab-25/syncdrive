@@ -17,7 +17,7 @@ def main():
     if "--help" in args:
         Helpers.help(args)
     else:
-        GDrive(0, args)
+        GDrive(0, args.split())
 
 
 if __name__ == "__main__":
