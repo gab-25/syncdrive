@@ -9,10 +9,13 @@ class GDrive:
             except AttributeError:
                 print("Param {0} not found, use --help for list params".format(arg))
 
+    def __login():
+        pass
+
     def upload():
-        """upload file into google drive"""
+        """upload: upload file into google drive"""
         print("upload function")
 
     def download():
-        """download file from google drive"""
+        """download: download file from google drive"""
         print("download function")
