@@ -1,3 +1,5 @@
+#!/bin/python3
+
 import sys
 from gdrive.gdrive import GDrive
 from gdrive.helpers import Helpers
