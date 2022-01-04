@@ -1,5 +1,3 @@
-#!/bin/python3
-
 import sys
 from gdrivesync.gdrive import GDrive
 from gdrivesync.helpers import Helpers
