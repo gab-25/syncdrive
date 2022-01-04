@@ -1,7 +1,7 @@
 import os
 import glob
 import inspect
-import gdrive
+import gdrivesync
 
 
 class Helpers:
@@ -21,7 +21,7 @@ class Helpers:
             file_name = os.path.splitext(os.path.basename(file))[0]
             if class_excluded.__contains__(file_name):
                 continue
-            module = getattr(gdrive, file_name)
+            module = getattr(gdrivesync, file_name)
             class_attr = getattr(module, dir(module)[0])
             class_func = inspect.getmembers(class_attr, inspect.isfunction)
             for func in class_func:
