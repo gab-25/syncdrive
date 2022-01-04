@@ -1,4 +1,4 @@
-from gdrivesync.login import Login
+from syncpy.login import Login
 
 
 class GDrive:
