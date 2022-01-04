@@ -1,6 +1,6 @@
 import sys
-from gdrivesync.gdrive import GDrive
-from gdrivesync.helpers import Helpers
+from syncpy.gdrive import GDrive
+from syncpy.helpers import Helpers
 
 
 def main():
