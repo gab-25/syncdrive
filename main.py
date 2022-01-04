@@ -4,7 +4,7 @@ from syncpy.helpers import Helpers
 
 
 def main():
-    print("GSYNCPY - GOOGLE SYNC TOOL")
+    print("SYNCPY - STORAGE SYNC TOOL")
     print()
 
     args = sys.argv
