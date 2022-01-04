@@ -1,1 +1,1 @@
-# gdrivesync
+# syncpy
