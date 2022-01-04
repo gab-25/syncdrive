@@ -1,12 +1,18 @@
 import unittest
-from syncpy.syncpy import run
+import sys
+import os
 
 
 class SyncpyTests(unittest.TestCase):
 
-    def test_invalid_args(self):
-        run()
+    def run_test(self):
+        from syncpy import run
+        self.assertRaises(Exception, run)
+
+        sys.argv = "--help"
+        self.assertTrue(run())
 
 
 if __name__ == "__main__":
+    sys.path.append(os.path.join(os.getcwd(), "syncpy"))
     unittest.main()

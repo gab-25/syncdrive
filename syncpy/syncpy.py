@@ -3,7 +3,7 @@ from gdrive import GDrive
 from helpers import Helpers
 
 
-def run():
+def run() -> bool:
     print("SYNCPY - STORAGE SYNC TOOL")
     print()
 
@@ -18,6 +18,8 @@ def run():
         Helpers.help(args)
     else:
         GDrive(0, args.split())
+
+    return True
 
 
 if __name__ == "__main__":
