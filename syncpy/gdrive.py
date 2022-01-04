@@ -1,4 +1,4 @@
-from syncpy.login import Login
+from login import Login
 
 
 class GDrive:

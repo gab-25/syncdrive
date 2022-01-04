@@ -1,9 +1,9 @@
 import sys
-from syncpy.gdrive import GDrive
-from syncpy.helpers import Helpers
+from gdrive import GDrive
+from helpers import Helpers
 
 
-def main():
+def run():
     print("SYNCPY - STORAGE SYNC TOOL")
     print()
 
@@ -22,6 +22,6 @@ def main():
 
 if __name__ == "__main__":
     try:
-        main()
+        run()
     except Exception as ex:
         print("Error: {0}".format(ex))

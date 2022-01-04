@@ -1,11 +1,11 @@
 import unittest
-from main import main
+from syncpy.syncpy import run
 
 
-class TestMain(unittest.TestCase):
+class SyncpyTests(unittest.TestCase):
 
     def test_invalid_args(self):
-        main()
+        run()
 
 
 if __name__ == "__main__":
