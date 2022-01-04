@@ -1,8 +1,8 @@
 #!/bin/python3
 
 import sys
-from gdrive.gdrive import GDrive
-from gdrive.helpers import Helpers
+from gdrivesync.gdrive import GDrive
+from gdrivesync.helpers import Helpers
 
 
 def main():

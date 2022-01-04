@@ -1,6 +1,4 @@
 import getpass
-import requests
-from bs4 import BeautifulSoup
 
 
 class User:
@@ -31,5 +29,3 @@ class Login:
             "Email": self.user.email,
             "Password": self.user.password
         }
-        with requests.Session() as s:
-

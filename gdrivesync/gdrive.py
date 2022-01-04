@@ -1,4 +1,4 @@
-from gdrive.login import Login
+from login import Login
 
 
 class GDrive:
