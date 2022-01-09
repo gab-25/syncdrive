@@ -13,7 +13,7 @@ class Helpers:
 
     @staticmethod
     def commands():
-        class_excluded = ["helpers", "login", "syncpy"]
+        class_excluded = ["helpers", "login", "main"]
         cmd_labels = []
         path = os.path.dirname(os.path.abspath(__file__))
         for file in glob.glob(os.path.join(path, "*.py")):
