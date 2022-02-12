@@ -4,7 +4,7 @@ from helpers import Helpers
 
 
 def run() -> bool:
-    print("SYNCPY - STORAGE SYNC TOOL")
+    print("SYNCDRIVE - GOOGLE DRIVE SYNC TOOL")
     print()
 
     args = sys.argv
